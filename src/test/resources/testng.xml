@@ -14,5 +14,12 @@
 	</test>
 
 	
+	<parameter name="browser" value="chrome" />
+	<test name="Image">
+		<classes>
+			<class
+				name="com.goemans.automation.functional.testcases.homepage" />
+		</classes>
+	</test>
 	
 </suite>

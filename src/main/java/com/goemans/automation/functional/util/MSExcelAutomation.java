@@ -1,4 +1,4 @@
-package com.solocal.automation.functional.util;
+package com.goemans.automation.functional.util;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

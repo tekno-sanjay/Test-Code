@@ -1,4 +1,4 @@
-package com.solocal.automation.functional.base;
+package com.goemans.automation.functional.base;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -23,9 +23,9 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
+import com.goemans.automation.functional.util.MSExcelAutomation;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
-import com.solocal.automation.functional.util.MSExcelAutomation;
 
 public class Base {
 
@@ -184,10 +184,10 @@ public class Base {
 		}
 
 	}
-
+	
 	@AfterSuite
 	public void afterSuite() {
-		// System.out.println("in afterSuite");
+		System.out.println("in afterSuite");
 		report.close();
 	}
 

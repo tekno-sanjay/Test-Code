@@ -10,9 +10,9 @@ import org.testng.SkipException;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.goemans.automation.functional.base.Base;
+import com.goemans.automation.functional.util.Utility;
 import com.relevantcodes.extentreports.LogStatus;
-import com.solocal.automation.functional.base.Base;
-import com.solocal.automation.functional.util.Utility;
 
 public class Link extends Base {
 
@@ -62,7 +62,7 @@ public class Link extends Base {
 				// calling verifyLink() method here. Passing the parameter as url which we
 				// collected in the above link
 				// See the detailed functionality of the verifyLink(url) method below
-				verifyLink(url);
+				verifyLink(url, i);
 			}
 		} catch (Exception e) {
 		}
@@ -70,9 +70,10 @@ public class Link extends Base {
 
 	// The below function verifyLink(String urlLink) verifies any broken links and
 	// return the server status.
-	public static void verifyLink(String urlLink) {
+	public static void verifyLink(String urlLink, int count) {
 		// Sometimes we may face exception "java.net.MalformedURLException". Keep the
 		// code in try catch block to continue the broken link analysis
+		count++;
 		try {
 			// Use URL Class - Create object of the URL Class and pass the urlLink as
 			// parameter
@@ -85,10 +86,10 @@ public class Link extends Base {
 			httpConn.connect();
 			// use getResponseCode() to get the response code.
 			if (httpConn.getResponseCode() == 200) {
-				System.out.println(urlLink + " - " + httpConn.getResponseMessage());
+				System.out.println(count + "." + urlLink + " - " + httpConn.getResponseMessage());
 			}
 			if (httpConn.getResponseCode() == 404) {
-				System.out.println(urlLink + " - " + httpConn.getResponseMessage());
+				System.out.println(count + "." + urlLink + " - " + httpConn.getResponseMessage());
 			}
 		}
 		// getResponseCode method returns = IOException - if an error occurred

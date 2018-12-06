@@ -1,9 +1,9 @@
-package com.solocal.automation.functional.util;
+package com.goemans.automation.functional.util;
 
 import org.openqa.selenium.By;
 //import org.openqa.selenium.support.ui.ExpectedConditions;
 
-import com.solocal.automation.functional.base.Base;
+import com.goemans.automation.functional.base.Base;
 
 public class BusinessFunctions extends Base {
 

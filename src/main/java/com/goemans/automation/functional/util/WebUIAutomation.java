@@ -1,4 +1,4 @@
-package com.solocal.automation.functional.util;
+package com.goemans.automation.functional.util;
 
 
 import java.awt.AWTException;
@@ -16,7 +16,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import com.solocal.automation.functional.base.Base;
+
+import com.goemans.automation.functional.base.Base;
 
 public class WebUIAutomation extends Base {
 

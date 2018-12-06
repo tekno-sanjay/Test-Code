@@ -1,20 +1,18 @@
-package com.solocal.automation.functional.util;
+package com.goemans.automation.functional.util;
 
 import java.io.File;
 //import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+//import javax.swing.Spring;
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 //import org.openqa.selenium.WebDriverException;
 
-
-import com.solocal.automation.functional.base.Base;
-
-//import javax.swing.Spring;
-import org.apache.commons.io.FileUtils;
+import com.goemans.automation.functional.base.Base;
 
 public class Utility extends Base {
 
