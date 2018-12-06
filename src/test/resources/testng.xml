@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Solocal Functional Automation">
+
+	
+
+	<parameter name="browser" value="chrome" />
+	<test name="Link">
+		<classes>
+			<class
+				name="com.goemans.automation.functional.testcases.homepage" />
+		</classes>
+	</test>
+
+	
+	
+</suite>
